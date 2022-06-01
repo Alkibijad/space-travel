@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+/* colors */
+:root {
+  --WhiteFont: #f2f4f8;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: transparent;
+  position: absolute;
+  color: #8c8c8d;
+}
+
+.header-icon {
+  width: 10%;
+  padding: 15px;
+}
+.header svg {
+  transform: scale(0.5);
+}
+.header-line {
+  width: 30%;
+  position: absolute;
+  left: 13%;
+  height: 1px;
+  border-bottom: 1px solid grey;
+  z-index: 10;
+}
+.header-nav {
+  width: 60%;
+  padding: 20px 15px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(230, 229, 233, 0.039);
+  z-index: 5;
+}
+.header-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.home-page-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--WhiteFont);
+}
+
+.home-page-content {
+  padding-top: 40vh;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.content-text {
+  width: 100%;
+  padding: 0 10vh;
+}
+.content-text :nth-child(1) {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.content-text h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 400;
+  padding: 5px;
+}
+.content-text :nth-child(3) {
+  font-size: 10px;
+  text-align: justify;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.content-circle {
+  text-align: center;
+}
+.content-circle .btn {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #f2f4f8;
+  color: black;
+  border-radius: 50%;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+/* destination page */
+
+.section-destination {
+  color: #8c8c8d;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destination-page-container {
+  padding: 20vh 5vh 0 5vh;
+  font-size: 10px;
+}
+.destination-page-header {
+  color: white;
+  text-transform: uppercase;
+}
+.destination-content {
+  margin-top: 30px;
+  max-height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.destination-details {
+  max-width: 80%;
+}
+.destination-content img {
+  max-width: 80%;
+}
+.destination-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  list-style-type: none;
+  font-size: 16px;
+}
+.destination-list li:hover {
+  transform: scale(1.3);
+  transition: 0.7s;
+}
+
+.planet-destination-name {
+  font-size: 10vh;
+  color: white;
+}
+.planet-destination-text {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 16px;
+}
+.line {
+  margin-top: 5vh;
+  border-bottom: 1px solid white;
+}
+.distanceAndTime {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.dt {
+  font-size: 3vh;
+  color: white;
+}
+
+/* Crew page */
+.section-crew {
+  display: none;
+}
+.crew-page-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/starter-code/assets/crew/background-crew-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+}
+
+.meetTheCrew {
+  /* background: white; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.member-image {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+.member-image img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.member-details {
+  color: white;
+  padding: 50px;
+}
+.num {
+  color: #5a5b5c;
+  font-weight: 600;
+}
+.crewMember {
+  color: white;
+  font-weight: 400;
+}
+.mycm {
+  padding-bottom: 20vh;
+}
+.member-name {
+  /* padding: 5vh 0; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 5vh;
+  font-weight: 100;
+}
+.bio {
+  height: 30vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  line-height: 30px;
+}
+.role {
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #5a5b5c;
+  font-weight: 600;
+  font-size: 3vh;
+}
+
+.circles {
+  display: flex;
+  justify-content: start;
+}
+.circles :nth-child(1) {
+  background-color: white;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5a5b5c;
+  margin-right: 50px;
+}
+
+/* Technology page */
+.section-techology {
+  display: none;
+}
+
+.tehnology-page-container {
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10vh;
+  background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech-container {
+  color: white;
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-content-container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: column;
+}
+
+.tech-info {
+  display: flex;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-text {
+  max-width: 500px;
+  padding-left: 50px;
+}
+.tech-text h3 {
+  padding: 20px 0;
+}
+.tech-text h2 {
+  padding: 20px 0;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.numberDIV {
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-contant-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-contant-container img {
+  width: 100%;
+}
