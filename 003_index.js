@@ -99,7 +99,7 @@ function displayCrew(data) {
 </div>
 <div class="member-image">
             <img class="member-img"
-              src= "/starter-code/assets/crew/image-douglas-hurley.png"
+              src= "assets/crew/image-douglas-hurley.png"
               alt=""
             />
           </div>
